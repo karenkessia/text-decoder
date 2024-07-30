@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --cor-primaria: #52057B;
+    --cor-secundaria: #892CDC;
+    --cor-terciaria: #aa8bc5; 
+    --cor-hover: #049b3e;
+    --cor-hover2: #025939;
+    --cor-fundo:#000; 
+    --cor:#fff;
+
+    --font-primaria: "Inter", sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    margin: auto;
+} 
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--cor-primaria);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--cor-secundaria);
+    border-radius: 20px;
+    border: 3px solid var(--cor-primaria);
+}
+
+.cabecalho__logo  {
+    display: flex;
+    align-items: initial;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.logo img {
+    padding: 2.5rem 0 0 0;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1920px;
+    gap: 7rem;
+}
+
+.container__project {
+    display: flex;
+    flex-direction: column;
+    padding: 8% 0 0 0;
+}
+
+.texto {
+    font-family: var(--font-primaria);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--cor-secundaria);
+    line-height: 150%;
+    background-color: transparent;
+    border: none;
+    text-transform: lowercase;
+    resize: none;
+}
+
+.texto::placeholder {
+    font-family: var(--fonte-primaria);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--cor-primaria);
+    text-transform: none;
+}
+
+textarea:focus {
+   outline: 0;
+}
+
+.texto::-webkit-scrollbar {
+    width: 12px;
+}
+
+.texto::-webkit-scrollbar-track {
+    background: var(--cor-primaria);
+}
+
+.texto::-webkit-scrollbar-thumb {
+    background-color: var(--cor-secundaria);
+    border-radius: 20px;
+    border: 3px solid var(--cor-primaria);
+}
+
+.container__project__alert {
+    display: flex;
+    align-items: center;
+    padding: 15px 0 15px 0;
+    gap: 8px;
+}
+
+.alert__project img {
+    width: 16px;
+    height: 16px;
+}
+
+.botoes__projeto {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.botao__projeto1 {
+    background-color: var(--cor-primaria);
+    color: var(--cor);
+    align-items: flex-start;
+    width: 50%;
+    height: 67px;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    gap: 24px;
+    justify-content: left;
+    border: none;
+    cursor: pointer;
+    gap: 8px;
+    text-align: center;
+    font-family: var(--font-primaria) ;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height:normal;
+}
+
+.botao__projeto1:hover {
+    background-color: var(--cor-hover);
+}
+
+.botao__projeto2 {
+    background-color: var(--cor-secundaria);
+    color: var(--cor);
+    align-items: flex-start;
+    width: 50%;
+    height: 67px;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    gap: 24px;
+    justify-content: left;
+    border: none;
+    cursor: pointer;
+    gap: 8px;
+    text-align: center;
+    font-family: var(--font-primaria) ;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height:normal;
+}
+
+.botao__projeto2:hover {
+    background-color: var(--cor-hover2);
+}
+
+
+.container__project__informacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 600px;
+    flex-shrink: 0;
+    background-color: var(--cor-fundo);
+    border-radius:32px;
+    box-shadow: 0px 24px 32px -8px rgba(131, 83, 143, 0.166);
+    gap: 40px;
+}
+
+.container__project__caixa {
+    width: 270px;
+}
+
+.container__project__caixa img {
+    width:100%;
+    border-radius: 20px;
+}
+
+.container__project__caixa img:hover {
+    -xpedu-transform: rotatez(-30deg);
+        -ms-transform: rotateZ(-30deg);
+        transform: rotateZ(-30deg);
+}
+
+.container__project__informacoes {
+    background-color: var(--cor-fundo);
+    justify-content:center;
+}
+
+.container__project__informacoes h2 {
+    text-align: center;
+    color:#0c7e08;
+    font-family: var(--font-primaria);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    padding: 17px;
+}
+
+.container__project__informacoes p {
+    text-align: center;
+    color:#0af363;
+    font-family: var(--font-primaria);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    padding: 0 40px;
+}
+
+.container__project__copia {
+    display: none;
+}
+
+.container__main__project__copia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 600px;
+    background-color:var(--cor-fundo);
+    border-radius: 32px;
+    gap: 55px;
+}
+
+.container__main__project__copia:hover {
+    background: linear-gradient(to bottom, #33ccff 0%, #660066 82%);
+}
+
+.container__main__project__copia .texto-destino {
+    background-color:transparent;
+    border: none;
+    font-family: var(--font-primaria);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color:var(--cor); 
+    text-transform: lowercase;
+    resize: none;
+    cursor: default;
+}
+
+.texto-destino::-webkit-scrollbar {
+    width: 12px;
+}
+
+.texto-destino::-webkit-scrollbar-track {
+    background: var(--cor);
+}
+
+.texto-destino::-webkit-scrollbar-thumb {
+    background-color: var(--cor);
+    border-radius: 20px;
+    border: 3px solid var(--cor-primaria);
+}
+
+.container__main__project__copia .botao__copiar {
+    width: 336px;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    border: 1px solid var(--cor-secundaria);
+    background: transparent;
+    cursor: pointer;
+    color:var(--cor);
+    text-align: center;
+    font-family: var(--font-primaria);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.botao__copiar:hover {
+    background-color: #150120;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    top: 100%;
+    margin-top: 4rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    padding: 1.2rem 0;
+    background-color: var(--cor-primaria);
+    color: #150120;
+    text-decoration:line-through;
+    font-family: var(--font-primaria);
+}
+
+.github-account {
+    color:#049b3e;
+    background-color: transparent;
+    text-decoration:none;
+}
+
+.github-logo {
+height: 2rem;
+  width: 2rem;
+}
+

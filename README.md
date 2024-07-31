@@ -6,7 +6,7 @@
 <h2> 👾 Sobre o Desafio</h2>
 
 
-<p>Neste Projeto no qual se intitula como "Robô Decodificador de Texto" utilizando HTML, CSS e JavaScript. O objetivo do projeto é aplicar uma criptografia simples a mensagens de texto, usando uma série de substituições de caracteres. As regras de criptografia são as seguintes: </p>
+<p>Projeto intitulado como "Robô Decodificador de Texto" desenvolvido com HTML, CSS e JavaScript. O objetivo do projeto é aplicar uma criptografia simples a mensagens de texto, usando uma série de substituições de caracteres. As regras de criptografia são as seguintes: </p>
 
 
 - A letra "a" é convertida para "ai"

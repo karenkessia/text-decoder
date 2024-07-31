@@ -9,19 +9,19 @@ document.addEventListener('DOMContentLoaded', function () {
     let conteudoMensagens = document.querySelector('.container__project__principal');
     let logo = document.querySelector('.logo');
 
-    // Recarregar a página ao clicar na logo
+    
     logo.addEventListener('click', function () {
         location.reload();
     });
 
-    // Função que verifica se o campo de texto está vazio para não habilitar os botões sem necessidade
+    
     function verificarTexto() {
         let textoNoCampo = campoTexto.value.trim();
         btoCriptografar.disabled = textoNoCampo === '';
         btoDescriptografar.disabled = textoNoCampo === '';
     }
 
-    // Previne acentos e caracteres especiais no campo de texto
+    
     campoTexto.addEventListener('input', function () {
         this.value = this.value.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
         this.value = this.value.replace(/[^\w\s]/gi, "");
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             let textoCriptografado = campoTexto.value;
 
-            // Criptografa o texto
+            
             let textoModificado = textoCriptografado.replace(/e/g, "enter")
                 .replace(/i/g, "imes")
                 .replace(/a/g, "ai")
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             let textoDescriptografado = campoTexto.value;
 
-            // Descriptografa o texto
+            
             let textoModificado = textoDescriptografado.replace(/enter/g, "e")
                 .replace(/imes/g, "i")
                 .replace(/ai/g, "a")
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Botão de copiar o texto
+    
     btoCopiar.addEventListener('click', function () {
         if (campoCopia.value.length > 0) {
             campoCopia.select();
@@ -79,6 +79,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Chama a função de verificação para configurar o estado dos botões
+    
     verificarTexto();
 });

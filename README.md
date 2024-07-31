@@ -8,11 +8,12 @@
 
 <p>Neste Projeto no qual se intitula como "Robô Decodificador de Texto" utilizando HTML, CSS e JavaScript. O objetivo do projeto é aplicar uma criptografia simples a mensagens de texto, usando uma série de substituições de caracteres. As regras de criptografia são as seguintes: </p>
 
--A letra "a" é convertida para "ai"
--A letra "e" é convertida para "enter"
--A letra "i" é convertida para "imes"
--A letra "o" é convertida para "ober"
--A letra "u" é convertida para "ufat"
+
+- A letra "a" é convertida para "ai"
+- A letra "e" é convertida para "enter"
+- A letra "i" é convertida para "imes"
+- A letra "o" é convertida para "ober"
+- A letra "u" é convertida para "ufat"
 
 
 <h2>Preview Project</h2>
